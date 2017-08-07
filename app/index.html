@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App + jQuery">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <title>Angle - Bootstrap Admin Template</title>
+   <!-- =============== VENDOR STYLES ===============-->
+   <!-- FONT AWESOME-->
+   <link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.min.css">
+   <!-- SIMPLE LINE ICONS-->
+   <link rel="stylesheet" href="../vendor/simple-line-icons/css/simple-line-icons.css">
+   <!-- ANIMATE.CSS-->
+   <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
+   <!-- WHIRL (spinners)-->
+   <link rel="stylesheet" href="../vendor/whirl/dist/whirl.css">
+   <!-- =============== PAGE VENDOR STYLES ===============-->
+   <!-- =============== BOOTSTRAP STYLES ===============-->
+   <link rel="stylesheet" href="css/bootstrap.css" id="bscss">
+   <!-- =============== APP STYLES ===============-->
+   <link rel="stylesheet" href="css/app.css" id="maincss">
+</head>
+
+<body class="layout-h">
+   <div class="wrapper">
+      <!-- top navbar-->
+      <header class="topnavbar-wrapper">
+         <!-- START Top Navbar-->
+         <nav role="navigation" class="navbar topnavbar">
+            <!-- START navbar header-->
+            <div class="navbar-header">
+               <a href="/" class="navbar-brand">
+                  <div class="brand-logo">
+                     <img src="img/logo.png" alt="App Logo" class="img-responsive">
+                  </div>
+                  <div class="brand-logo-collapsed">
+                     <img src="img/logo-single.png" alt="App Logo" class="img-responsive">
+                  </div>
+               </a>
+            </div>
+            <!-- END navbar header-->
+            <!-- START Nav wrapper-->
+            <div class="nav-wrapper">
+               <!-- START Right Navbar-->
+               <ul class="nav navbar-nav navbar-right">
+                  <!-- Search icon-->
+                  <li>
+                     <a href="#about" data-search-open="">
+                        About
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#experience" data-search-open="">
+                        Experience
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#projects" data-search-open="">
+                        Projects
+                     </a>
+                  </li>
+               </ul>
+               <!-- END Right Navbar-->
+            </div>
+            <!-- END Nav wrapper-->
+         </nav>
+         <!-- END Top Navbar-->
+      </header>
+      <!-- Main section-->
+      <section>
+         <!-- Page content-->
+         <div class="content-wrapper">
+            <div class="row">
+               <!-- Aside panel-->
+               <div class="col-lg-4">
+                  <!-- START widget-->
+                  <div class="panel widget">
+                     <div class="half-float">
+                        <img src="img/bg3.jpg" alt="" class="img-responsive">
+                        <div class="half-float-bottom">
+                           <img src="img/user/09.jpg" alt="Image" class="img-thumbnail img-circle thumb128">
+                        </div>
+                     </div>
+                     <div class="panel-body text-center">
+                        <h3 class="m0">Ivan Porollo</h3>
+                        <p class="text-muted">Student | Something | Something</p>
+                        <p>Proin metus justo, commodo in ultrices at, lobortis sit amet dui. Fusce dolor purus, adipiscing a tempus at, gravida vel purus.</p>
+                     </div>
+                     <div class="panel-body text-center bg-gray-dark">
+                        <div class="row row-table">
+                           <div class="col-xs-4">
+                              <a href="mailto:iporollo@gmail.com" target="_top" class="text-white">
+                                 <em class="fa fa-envelope-o fa-2x"></em>
+                              </a>
+                           </div>
+                           <div class="col-xs-4">
+                              <a href="https://www.linkedin.com/in/iporollo/" target="_blank" class="text-white">
+                                 <em class="fa fa-linkedin fa-2x"></em>
+                              </a>
+                           </div>
+                           <div class="col-xs-4">
+                              <a href="https://github.com/iporollo" target="_blank" class="text-white">
+                                 <em class="fa fa-github fa-2x"></em>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END widget-->
+                  <div class="panel b ">
+                     <div class="panel-body">
+                        <div class="text-center">
+                           <img src="img/ohio_state_twitter.png" class="img-circle thumb128">
+                           <p class="h3 text-bold mb0">The Ohio State University</p>                     
+                           <hr> 
+                        </div>
+                        <p class="h4">Double Major: Computer Science, Russian Language</p>
+                        <p class="h4">Green Engineering Scholars Program</p>
+                        <p class="h4">Graduating Date: May, 2019</p>
+                        <p class="h4">GPA: 3.2/4.0</p>                        
+
+                     </div>
+                  </div>
+
+                  <div class="panel widget">
+                     <div class="panel-body">
+                        <h3 class="mt0">Skills</h3>
+                        <p class="text-muted">Java</p>
+                        <div class="progress progress-striped progress-xs">
+                           <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70" class="progress-bar progress-bar-success progress-70">
+                              <span class="sr-only">60% Complete</span>
+                           </div>
+                        </div>
+                        <p class="text-muted">Python</p>
+                        <div class="progress progress-striped progress-xs">
+                           <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70" class="progress-bar progress-bar-success progress-70">
+                              <span class="sr-only">60% Complete</span>
+                           </div>
+                        </div>
+                        <p class="text-muted">HTML/CSS</p>
+                        <div class="progress progress-striped progress-xs">
+                           <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="70" class="progress-bar progress-bar-success progress-60">
+                              <span class="sr-only">60% Complete</span>
+                           </div>
+                        </div>
+                        <p class="text-muted">Ruby/Rails</p>
+                        <div class="progress progress-striped progress-xs">
+                           <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="70" class="progress-bar progress-bar-success progress-60">
+                              <span class="sr-only">60% Complete</span>
+                           </div>
+                        </div>
+                        <p class="text-muted">JavaScript/jQuery</p>
+                        <div class="progress progress-striped progress-xs">
+                           <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="70" class="progress-bar progress-bar-success progress-50">
+                              <span class="sr-only">50% Complete</span>
+                           </div>
+                        </div>
+                        <p class="text-muted">Swift</p>
+                        <div class="progress progress-striped progress-xs">
+                           <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="70" class="progress-bar progress-bar-success progress-40">
+                              <span class="sr-only">40% Complete</span>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="col-lg-8">
+                  <!-- Main panel-->
+                  <div class="panel b" id="about">
+                     <div class="panel-body">
+                        <div class="text-center">
+                           <h3 class="mt0">About Me</h3>
+                        </div>
+                        <hr>
+                        <div style="font-size: 15px;">
+                           <p class="mt0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+                           <p>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                           </p>
+
+                           <p>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                           </p>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                           <a href="./content/ivanPorolloResume.pdf" target="_blank" class="btn btn-primary">
+                              <em class="fa fa-file-text mr-lg"></em>Download Resume
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="panel b" id="experience">
+                     <div class="panel-body">
+                        <div class="text-center">
+                           <h3 class="mt0">Work Experience</h3>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                           <div class="col-lg-3 text-center mb-lg">
+                              <a href="#">
+                                 <img src="img/user/02.jpg" class="img-circle thumb128">
+                              </a>
+                           </div>
+                           <div class="col-lg-9">
+                              <h4 class="media-heading text-center">Lorem Ipsum</h4>
+                              <p>Fusce at enim eget nibh convallis elementum. Duis a neque odio, at varius elit. Suspendisse ullamcorper eros eget augue ultrices feugiat. Phasellus dictum nisi eu ipsum fermentum rhoncus. Mauris eu lacus massa, vel condimentum
+                                 lectus..</p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-3 text-center mb-lg">
+                              <a href="#">
+                                 <img src="img/user/02.jpg" class="img-circle thumb128">
+                              </a>
+                           </div>
+                           <div class="col-lg-9">
+                              <h4 class="media-heading text-center">Lorem Ipsum</h4>
+                              <p>Fusce at enim eget nibh convallis elementum. Duis a neque odio, at varius elit. Suspendisse ullamcorper eros eget augue ultrices feugiat. Phasellus dictum nisi eu ipsum fermentum rhoncus. Mauris eu lacus massa, vel condimentum
+                                 lectus..</p>
+                           </div>
+                        </div> 
+                        <div class="row">
+                           <div class="col-lg-3 text-center mb-lg">
+                              <a href="#">
+                                 <img src="img/user/02.jpg" class="img-circle thumb128">
+                              </a>
+                           </div>
+                           <div class="col-lg-9">
+                              <h4 class="media-heading text-center">Lorem Ipsum</h4>
+                              <p>Fusce at enim eget nibh convallis elementum. Duis a neque odio, at varius elit. Suspendisse ullamcorper eros eget augue ultrices feugiat. Phasellus dictum nisi eu ipsum fermentum rhoncus. Mauris eu lacus massa, vel condimentum
+                                 lectus..</p>
+                           </div>
+                        </div> 
+                        <div class="row">
+                           <div class="col-lg-3 text-center mb-lg">
+                              <a href="#">
+                                 <img src="img/user/02.jpg" class="img-circle thumb128">
+                              </a>
+                           </div>
+                           <div class="col-lg-9">
+                              <h4 class="media-heading text-center">Lorem Ipsum</h4>
+                              <p>Fusce at enim eget nibh convallis elementum. Duis a neque odio, at varius elit. Suspendisse ullamcorper eros eget augue ultrices feugiat. Phasellus dictum nisi eu ipsum fermentum rhoncus. Mauris eu lacus massa, vel condimentum
+                                 lectus..</p>
+                           </div>
+                        </div>  
+                     </div>
+                  </div>
+
+                  <div class="panel b" id="projects">
+                     <div class="panel-body">
+                        <div class="text-center">
+                           <h3 class="mt0">Personal Projects</h3>
+                        </div>
+                        <hr>
+                        <div class="row">
+                           <div class="col-lg-3 text-center mb-lg">
+                              <a href="#">
+                                 <img src="img/user/02.jpg" class="img-circle thumb128">
+                              </a>
+                           </div>
+                           <div class="col-lg-9">
+                              <h4 class="media-heading text-center">Lorem Ipsum</h4>
+                              <p>Fusce at enim eget nibh convallis elementum. Duis a neque odio, at varius elit. Suspendisse ullamcorper eros eget augue ultrices feugiat. Phasellus dictum nisi eu ipsum fermentum rhoncus. Mauris eu lacus massa, vel condimentum
+                                 lectus..</p>
+                           </div>
+                        </div> 
+                        <div class="row">
+                           <div class="col-lg-3 text-center mb-lg">
+                              <a href="#">
+                                 <img src="img/user/02.jpg" class="img-circle thumb128">
+                              </a>
+                           </div>
+                           <div class="col-lg-9">
+                              <h4 class="media-heading text-center">Lorem Ipsum</h4>
+                              <p>Fusce at enim eget nibh convallis elementum. Duis a neque odio, at varius elit. Suspendisse ullamcorper eros eget augue ultrices feugiat. Phasellus dictum nisi eu ipsum fermentum rhoncus. Mauris eu lacus massa, vel condimentum
+                                 lectus..</p>
+                           </div>
+                        </div> 
+                     </div>
+                  </div>
+                  <!-- End Main panel-->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Page footer-->
+<!--       <footer>
+         <span>&copy; 2017 - Angle</span>
+      </footer> -->
+   </div>
+   <!-- =============== VENDOR SCRIPTS ===============-->
+   <!-- MODERNIZR-->
+   <script src="../vendor/modernizr/modernizr.custom.js"></script>
+   <!-- MATCHMEDIA POLYFILL-->
+   <script src="../vendor/matchMedia/matchMedia.js"></script>
+   <!-- JQUERY-->
+   <script src="../vendor/jquery/dist/jquery.js"></script>
+   <!-- BOOTSTRAP-->
+   <script src="../vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <!-- STORAGE API-->
+   <script src="../vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <!-- JQUERY EASING-->
+   <script src="../vendor/jquery.easing/js/jquery.easing.js"></script>
+   <!-- ANIMO-->
+   <script src="../vendor/animo.js/animo.js"></script>
+   <!-- SLIMSCROLL-->
+   <script src="../vendor/slimScroll/jquery.slimscroll.min.js"></script>
+   <!-- SCREENFULL-->
+   <script src="../vendor/screenfull/dist/screenfull.js"></script>
+   <!-- LOCALIZE-->
+   <script src="../vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+   <!-- RTL demo-->
+   <script src="js/demo/demo-rtl.js"></script>
+   <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+   <!-- =============== APP SCRIPTS ===============-->
+   <script src="js/app.js"></script>
+</body>
+
+</html>
