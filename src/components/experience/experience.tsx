@@ -1,8 +1,20 @@
 import * as React from 'react';
 import PageContainer from '../page-container/page-container';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import * as OSU_LOGO from "../../images/OSULogo.png";
+import * as CCHMC_LOGO from "../../images/CCHMCLogo.png";
+import * as BOA_LOGO from "../../images/BOALogo.png";
+import * as WT_LOGO from "../../images/WiretapLogo.png";
+import * as FREELANCE_LOGO from "../../images/FreelanceLogo.png";
+
 import 'react-vertical-timeline-component/style.min.css';
 import './experience.css';
+
+const OSU_IMG: any = <img src={OSU_LOGO} height="40px" width="40px" style={{paddingLeft: "10px", paddingTop: "8px"}}></img>
+const CCHMC_IMG: any = <img src={CCHMC_LOGO} height="40px" width="40px" style={{paddingLeft: "9px", paddingTop: "9px"}}></img>
+const BOA_IMG: any = <img src={BOA_LOGO} height="40px" width="40px" style={{paddingLeft: "11px", paddingTop: "10px"}}></img>
+const WT_IMG: any = <img src={WT_LOGO} height="40px" width="40px" style={{paddingLeft: "10px", paddingTop: "11px"}}></img>
+const FREELANCE_IMG: any = <img src={FREELANCE_LOGO} height="40px" width="40px" style={{paddingLeft: "10px", paddingTop: "11px"}}></img>
 
 class Experience extends React.Component {
   public render() {
@@ -12,92 +24,105 @@ class Experience extends React.Component {
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={""}
+                    date="Summer 2018 - present"
+                    iconStyle={{ background: 'rgb(224, 176, 255)', color: '#fff' }}
+                    icon={FREELANCE_IMG}
                 >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                    <div className="vertical-timeline-element-technologies">
+                        <div className="tech-button">
+                            <span className="tech-button-text">ReactJS</span>
+                        </div>
+                        <div className="tech-button">
+                            <span className="tech-button-text">C#</span>
+                        </div>
+                        <div className="tech-button">
+                            <span className="tech-button-text">Ruby on Rails</span>
+                        </div>
+                    </div>
+                    <h3 className="vertical-timeline-element-title">Freelance Web Developer</h3>
+                    <h4 className="vertical-timeline-element-subtitle subtitle"></h4>
                     <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    Description tbd
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={""}
+                    date="Fall 2017 - Summer 2018"
+                    iconStyle={{ background: 'rgb(224, 176, 255)', color: '#fff' }}
+                    icon={WT_IMG}
                 >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                    <div className="vertical-timeline-element-technologies">
+                        <div className="tech-button">
+                            <span className="tech-button-text">ReactJS</span>
+                        </div>
+                        <div className="tech-button">
+                            <span className="tech-button-text">C#</span>
+                        </div>
+                    </div>
+                    <h3 className="vertical-timeline-element-title">Web Developer Intern</h3>
+                    <h4 className="vertical-timeline-element-subtitle subtitle">Wiretap</h4>
                     <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                    Description tbd
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={""}
+                    date="Summer 2017"
+                    iconStyle={{ background: 'rgb(224, 176, 255)', color: '#fff' }}
+                    icon={BOA_IMG}
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                    <div className="vertical-timeline-element-technologies">
+                        <div className="tech-button">
+                            <span className="tech-button-text">Python</span>
+                        </div>
+                        <div className="tech-button">
+                            <span className="tech-button-text">Flask</span>
+                        </div>
+                    </div>
+                    <h3 className="vertical-timeline-element-title">Software Engineering Intern</h3>
+                    <h4 className="vertical-timeline-element-subtitle subtitle">Bank of America</h4>
                     <p>
-                    User Experience, Visual Design
+                    Description tbd
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={""}
+                    date="Summer 2016"
+                    iconStyle={{ background: 'rgb(224, 176, 255)', color: '#fff' }}
+                    icon={CCHMC_IMG}
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                    <div className="vertical-timeline-element-technologies">
+                        <div className="tech-button">
+                            <span className="tech-button-text">Angular2</span>
+                        </div>
+                    </div>
+                    <h3 className="vertical-timeline-element-title">Web Developer Intern</h3>
+                    <h4 className="vertical-timeline-element-subtitle subtitle">Cincinnati Children's Hospital</h4>
                     <p>
-                    User Experience, Visual Design
+                    Description tbd
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={""}
+                    date="Fall 2015 - Spring 2019 "
+                    iconStyle={{ background: 'rgb(187, 0, 0)', color: '#fff' }}
+                    icon={OSU_IMG}
                 >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>
-                    Strategy, Social Media
+                    <h3 className="vertical-timeline-element-title">Education - Double Major: </h3>
+                    <h3 className="vertical-timeline-element-title double-major-spacing"> • Bachelor of Science in Computer Science & Engineering</h3>
+                    <h3 className="vertical-timeline-element-title double-major-spacing"> • Bachelor of Art in Russian Language</h3>
+                    <p>The Ohio State University</p>
+                    {/* <p>
+                    Computer Science & Engineering: Focus on artificial intelligence studies
                     </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={""}
-                >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
                     <p>
-                    Creative Direction, User Experience, Visual Design
-                    </p>
+                    Russian: Focus on language studies
+                    </p> */}
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={""}
-                >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                    <p>
-                    Creative Direction, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
+                {/* <VerticalTimelineElement
                     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                     icon={""}
-                />
+                /> */}
                 </VerticalTimeline>
             </div>  
         </PageContainer>

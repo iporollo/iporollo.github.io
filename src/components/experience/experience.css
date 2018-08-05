@@ -1,0 +1,31 @@
+.subtitle {
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.double-major-spacing {
+    margin-top: 7px;
+}
+
+.vertical-timeline-element-technologies {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.vertical-timeline-element-technologies .tech-button {
+    border-radius: 16px;
+    background-color: #e0e0e0;
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+    height: 29px;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgba(38, 36, 31, 0.2);
+    margin-right: 10px;
+}
+
+.vertical-timeline-element-technologies .tech-button .tech-button-text{
+    padding: 0px 12px;
+    vertical-align: -webkit-baseline-middle;
+    font-size: 15px;
+}
