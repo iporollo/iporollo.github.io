@@ -1,12 +1,13 @@
 .terminal-image-window {
     margin: 0 auto;
     width: 200px;
-    height: 100px;
+    height: 150px;
     text-align: left;
     margin-top: 15px;
     position: relative;
     border-radius: 10px;
-    margin-bottom: 50px;
+    border: 1px solid black;
+    margin-bottom: 30px;
   }
   
   .terminal-image-window header {
@@ -17,7 +18,7 @@
     height: 30px;
     border-radius: 8px 8px 0 0;
     padding-left: 10px;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
   .terminal-name {
@@ -51,30 +52,25 @@
   }
   
   .terminal-image-window {
-    background-color: #0D1F2D;
+    /* background-color: #0D1F2D; */
+    background-color: rgba(255, 255, 255, 0.8);
     color: #F4FAFF;
     font-size: 11pt;
-
-  }
-  
-  .terminal-text {
-    margin-left: 20px;
-    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   }
 
   .terminal-image-name {
     color: #0f0f0f;
     margin-top: 7px;
-    /* margin-left: -55px; */
     margin-left: -35px;
   }
-  
-  #typed-strings {
-    display: inline-block;
-    position: relative;
+
+  .terminal-image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
   }
-  
-  #typed {
-    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-    margin-left: 15px;
-  }
+
+  .terminal-image-window:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}

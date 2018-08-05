@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import About from "../about/about";
 import Wrapper from "../wrapper/wrapper";
-import 'babel-polyfill'
+import About from "../about/about";
+import Experience from "../experience/experience";
+
+import 'babel-polyfill';
+import 'react-typist/dist/Typist.css';
 import './App.css';
 
 class App extends React.Component {
@@ -13,6 +16,12 @@ class App extends React.Component {
           <Route exact path ="/" render={(routeProps) => (
             <About></About>
           )}/>
+          <Route exact path ="/experience" render={(routeProps) => (
+            <Experience></Experience>
+          )}/>
+          {/* <Route exact path ="/portfolio" render={(routeProps) => (
+            <Portfolio></Portfolio>
+          )}/> */}
         </Wrapper>
       </BrowserRouter>
     );

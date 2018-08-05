@@ -71,6 +71,18 @@
     margin-left: 20px;
     font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   }
+
+  .terminal_text .p {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  .terminal-custom-typist {
+    display: flex;
+  }
+  .terminal-custom-typist-div{
+    margin-left: 7px;
+  }
   
   #typed-strings {
     display: inline-block;
