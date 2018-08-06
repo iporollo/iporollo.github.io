@@ -51,3 +51,67 @@
 .vertical-timeline-element-details .details-button:hover{
     background-color: rgba(0, 0, 0, 0.08);
 }
+
+.osu_img {
+    padding-left: 10px;
+    padding-top: 8px;
+    height: 40px;
+    width: 40px;
+}
+.cchmc_img {
+    padding-left: 9px;
+    padding-top: 9px;
+    height: 40px;
+    width: 40px;
+}
+.boa_img {
+    padding-left: 11px;
+    padding-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+.wt_img {
+    padding-left: 10px;
+    padding-top: 11px;
+    height: 40px;
+    width: 40px;
+}
+.freelance_img {
+    padding-left: 10px;
+    padding-top: 11px;
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1170px) {
+    .osu_img {
+        padding-left: 7px;
+        padding-top: 7px;
+        height: 25px;
+        width: 25px;
+    }
+    .cchmc_img {
+        padding-left: 7px;
+        padding-top: 7px;
+        height: 25px;
+        width: 25px;
+    }
+    .boa_img {
+        padding-left: 5px;
+        padding-top: 5px;
+        height: 30px;
+        width: 30px;
+    }
+    .wt_img {
+        padding-left: 8px;
+        padding-top: 8px;
+        height: 25px;
+        width: 25px;
+    }
+    .freelance_img {
+        padding-left: 5px;
+        padding-top: 5px;
+        height: 30px;
+        width: 30px;
+    }
+}

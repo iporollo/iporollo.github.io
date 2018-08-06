@@ -1,0 +1,18 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .other-projects {
+
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolio .project-row {
+        justify-content: space-between;
+    }
+
+    .project-row .project-row-left {
+        margin-right: 20px;
+    }
+}

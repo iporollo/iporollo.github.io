@@ -13,11 +13,11 @@ import * as FREELANCE_LOGO from "../../images/FreelanceLogo.png";
 import 'react-vertical-timeline-component/style.min.css';
 import './experience.css';
 
-const OSU_IMG: any = <img src={OSU_LOGO} height="40px" width="40px" style={{paddingLeft: "10px", paddingTop: "8px"}}></img>
-const CCHMC_IMG: any = <img src={CCHMC_LOGO} height="40px" width="40px" style={{paddingLeft: "9px", paddingTop: "9px"}}></img>
-const BOA_IMG: any = <img src={BOA_LOGO} height="40px" width="40px" style={{paddingLeft: "11px", paddingTop: "10px"}}></img>
-const WT_IMG: any = <img src={WT_LOGO} height="40px" width="40px" style={{paddingLeft: "10px", paddingTop: "11px"}}></img>
-const FREELANCE_IMG: any = <img src={FREELANCE_LOGO} height="40px" width="40px" style={{paddingLeft: "10px", paddingTop: "11px"}}></img>
+const OSU_IMG: any = <img src={OSU_LOGO} className="osu_img"></img>
+const CCHMC_IMG: any = <img src={CCHMC_LOGO} className="cchmc_img"></img>
+const BOA_IMG: any = <img src={BOA_LOGO} className="boa_img"></img>
+const WT_IMG: any = <img src={WT_LOGO} className="wt_img"></img>
+const FREELANCE_IMG: any = <img src={FREELANCE_LOGO} className="freelance_img"></img>
 
 interface ExperienceStates {
     isFreelanceModalOpen: boolean;

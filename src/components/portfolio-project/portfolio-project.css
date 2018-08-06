@@ -1,0 +1,13 @@
+.portfolio .project-row {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0px 100px;
+    margin: 20px 0px;
+}
+
+.project-row .project-row-left {
+    margin-right: 140px;
+}
+
+.portfolio .project-row-right {
+}

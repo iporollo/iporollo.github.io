@@ -7,6 +7,7 @@ interface TerminalImageProps {
     terminalImageHeight: number;
     terminalImageWidth: number;
     terminalLink: string;
+    portfolio?: boolean;
 }
 
 class TerminalImage extends React.Component<TerminalImageProps, any> {
@@ -24,7 +25,7 @@ class TerminalImage extends React.Component<TerminalImageProps, any> {
 
   public render() {
     return (
-        <div className="terminal-image-window" onClick={this.handleImageClick}>
+        <div className={"terminal-image-window" + (this.props.portfolio ? " terminal-portfolio" : "")} onClick={this.handleImageClick}>
             <header>
             <div className="terminal-image-buttons">
                 <div className="red_btn button"></div>
