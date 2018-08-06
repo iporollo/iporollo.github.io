@@ -41,7 +41,7 @@ class About extends React.Component<any, AboutStates> {
                   <div className="yellow_btn button"></div>
                 </div>
                 <div className="terminal-center">
-                  <div className="terminal_name">About</div>
+                  <div className="terminal_name">About Me</div>
                 </div>
                 <div></div>
               </header>

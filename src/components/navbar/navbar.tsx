@@ -2,6 +2,11 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Typist from "react-typist";
 import { NavbarTabsEnum } from "../../util/NavbarTabsEnum";
+import ReactModal from "react-modal";
+import ModalCloseIcon from "../icons/modal-close-icon";
+
+import * as FREELANCE_LOGO from "../../images/FreelanceLogo.png";
+
 import './navbar.css';
 
 interface NavbarProps {
@@ -9,10 +14,19 @@ interface NavbarProps {
     handleNavbarTabChangeCallback: any;
 }
 
-class Navbar extends React.Component<NavbarProps, any> {
+interface NavbarStates {
+    isFreelanceModalOpen: boolean
+}
+
+class Navbar extends React.Component<NavbarProps, NavbarStates> {
     public constructor(props: NavbarProps) {
         super(props);
+        this.state = {
+            isFreelanceModalOpen: false
+        }
         this.handleTabChange = this.handleTabChange.bind(this);
+        this.handleFreelanceClick = this.handleFreelanceClick.bind(this);
+        this.handleCloseFreelanceModal = this.handleCloseFreelanceModal.bind(this);
     }
 
     private handleTabChange(e: any) {
@@ -36,8 +50,18 @@ class Navbar extends React.Component<NavbarProps, any> {
          } 
     }
 
+    private handleFreelanceClick() {
+        this.setState({isFreelanceModalOpen: true});
+    }
+
+    private handleCloseFreelanceModal() {
+        this.setState({isFreelanceModalOpen: false});
+
+    }
+
   public render() {
     return (
+        <React.Fragment>
         <header className="navbar">
             <div className="left">                 
                 <h1>
@@ -72,9 +96,37 @@ class Navbar extends React.Component<NavbarProps, any> {
                       onClick={this.handleTabChange}>
                       Portfolio
                 </Link>
-                <a href="javascript:void(0)">Freelance</a>
+                <a href="javascript:void(0)" onClick={this.handleFreelanceClick} className="freelance-link">Freelance</a>
             </div>
         </header>
+
+        <ReactModal isOpen={this.state.isFreelanceModalOpen}
+                    onRequestClose={this.handleCloseFreelanceModal}
+                    className="modal_container modal_container_simple"
+                    overlayClassName="c_overlay c_overlay_dark"
+                    closeTimeoutMS={200}
+                    >    
+                <div className="modal modal_light modal_simple">
+                    <div className="modal_content">
+                        <div className="modal_x-close" onClick={this.handleCloseFreelanceModal}>
+                                <ModalCloseIcon fill={"rgba(0,0,0,0.5)"} />
+                        </div>
+                        <div className="modal_header modal_header_custom modal_header_background-filled">
+                            <div className="modal_header_decor"></div>
+                            <div className="modal_header_img_container" style={{backgroundColor: "rgb(252, 209, 42)"}}>
+                                <img src={FREELANCE_LOGO} height="40px" width="40px" className="modal_header_img"></img>
+                            </div>
+                        </div>
+                        <div className="modal_body">
+                            <div className="modal_body_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dolor non quam elementum semper ut et tortor.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </ReactModal>
+        </React.Fragment>
     );
   }
 }
