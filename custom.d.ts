@@ -1,7 +1,0 @@
-declare module '*.svg'
-declare module '*.png'
-declare module '*.jpg'
-declare module 'react-snapshot'
-declare module 'react-typist'
-declare module 'react-vertical-timeline-component'
-declare module '@trendmicro/react-dropdown'
