@@ -6,6 +6,7 @@ interface PortfolioProjectProps {
     terminalName: string;
     terminalLink: string;
     projectText: string;
+    reactDash?: boolean;
     svg?: any;    
     terminalImage?: any;
     terminalImageHeight?: number;
@@ -17,7 +18,7 @@ class PortfolioProject extends React.Component<PortfolioProjectProps, any> {
     return (
         <div className="project-row">
             <div className="project-row-left">
-                <TerminalImage portfolio svg={this.props.svg} terminalImage={this.props.terminalImage} terminalImageHeight={this.props.terminalImageHeight} terminalImageWidth={this.props.terminalImageWidth} terminalName={this.props.terminalName} terminalLink={this.props.terminalLink}/>
+                <TerminalImage reactDash={this.props.reactDash} portfolio svg={this.props.svg} terminalImage={this.props.terminalImage} terminalImageHeight={this.props.terminalImageHeight} terminalImageWidth={this.props.terminalImageWidth} terminalName={this.props.terminalName} terminalLink={this.props.terminalLink}/>
             </div>
             <div className="project-row-right">
                 <p>{this.props.projectText}</p>

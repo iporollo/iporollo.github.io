@@ -5,6 +5,7 @@ interface TerminalImageProps {
     terminalName: string;
     terminalLink: string;
     portfolio?: boolean;
+    reactDash?: boolean;
     svg?: any;
     terminalImage?: any;
     terminalImageHeight?: number;
@@ -38,11 +39,14 @@ class TerminalImage extends React.Component<TerminalImageProps, any> {
             </div>
             <div></div>
             </header>
-            <div className="terminal-image-container">
+            <div className={("terminal-image-container " + (this.props.reactDash ? "no-top-margin" : ""))}>
                 {this.props.svg ? 
                     this.props.svg
                 :
-                    <img src={this.props.terminalImage} height={this.props.terminalImageHeight} width={this.props.terminalImageWidth}/>
+                    this.props.reactDash ? 
+                        <img src={this.props.terminalImage} className="react-dash-img"/>
+                    :
+                        <img src={this.props.terminalImage} height={this.props.terminalImageHeight} width={this.props.terminalImageWidth}/>
                 }
             </div>
         </div>

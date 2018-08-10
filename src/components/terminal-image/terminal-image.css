@@ -6,7 +6,7 @@
     margin-top: 15px;
     position: relative;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1.5px solid black;
     margin-bottom: 30px;
   }
   
@@ -70,6 +70,12 @@
       margin-top: 30px;
   }
 
+  .terminal-image-container.no-top-margin{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
   .terminal-image-window:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.5);
@@ -80,9 +86,18 @@
   height: 250px;
 }
 
+.react-dash-img {
+  height: 212px;
+  width: 400px;
+}
+
 @media screen and (max-width: 764px) {
   .project-row .terminal-portfolio {
     width: 300px;
     height: 200px;
+  }
+  .react-dash-img {
+    height: 163px;
+    width: 301px;
   }
 }

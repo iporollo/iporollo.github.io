@@ -14,9 +14,11 @@ class App extends React.Component {
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Wrapper>
-          <Route exact path ="/" render={(routeProps) => (
+
+          <Route exact path ="/" render={(routeProps) => (          
             <About></About>
           )}/>
+          
           <Route exact path ="/experience" render={(routeProps) => (
             <Experience></Experience>
           )}/>
@@ -28,5 +30,4 @@ class App extends React.Component {
     );
   }
 }
-
 export default App;
