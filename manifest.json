@@ -1,0 +1,8 @@
+{
+  "short_name": "iPorollo Portfolio",
+  "name": "Ivan Porollo's Portfolio Website",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
