@@ -33,7 +33,8 @@ class About extends React.Component<any, AboutStates> {
       <PageContainer>
         <div className="about-page">
           <div className="about-left">
-            <div className="terminal_window">
+
+              <div className="terminal_window">              
               <header>
                 <div className="terminal-buttons">
                   <div className="red_btn button"></div>
@@ -45,10 +46,9 @@ class About extends React.Component<any, AboutStates> {
                 </div>
                 <div></div>
               </header>
-              <div className="terminal_window">
                 <div id="typed-strings" className="terminal_text">
 
-                  <p className={"terminal-custom-typist"}>
+                  <span className={"terminal-custom-typist"}>
                     Ivans-Portfolio: ~ $ 
                     <Typist avgTypingDelay={40}
                           startDelay={1500}
@@ -64,13 +64,19 @@ class About extends React.Component<any, AboutStates> {
                             >
                       cat about_me.txt              
                     </Typist>
-                  </p>
+                  </span>
                   {this.state.isAboutTerminalTextShown && [
-                    <p key={"text1"}>Hello my name is Ivan Porollo and this is where I will write more about myself and this is also where more text needs to go because it needs to wrap.</p>
+                    <p key={"text1"}>
+                      Welcome! Thanks for checking out my portfolio website. I am currently a senior at The Ohio State University while also working as a part time freelance web developer. 
+                    </p>
                     ,
-                    <p key={"text2"}>This is the second paragraph sfbsjbhfsbf asbfb askjdf lajf akjb fklsjfb klasj fblksajfblsk labjsdf alkjbf k fklb fksbf k</p>
+                    <p key={"text2"}>From a professional standpoint, I've interned at various companies for the past three summers. I've also worked on some cool personal and freelance projects along the way. You can find out more about what I've done in the <span style={{textDecoration: "underline", color:"#98FB98"}}>Experience</span> and <span style={{textDecoration: "underline", color:"#98FB98"}}>Portfolio</span> tabs.
+                    </p>
                     ,
-                    <p className={"terminal-custom-typist"} key={"text3"}>
+                    <p key={"text3"}>If you are interested in my freelance work and would like to contact me to discuss a project, please visit the <span style={{textDecoration: "underline", color:"#98FB98"}}>Freelance</span> tab for more information.
+                    </p>
+                    ,
+                    <span className={"terminal-custom-typist"} key={"text4"}>
                       Ivans-Portfolio: ~ $
                       <Typist avgTypingDelay={40}
                         startDelay={500}
@@ -82,14 +88,13 @@ class About extends React.Component<any, AboutStates> {
                             hideWhenDone: false,
                           }}>
                       </Typist>
-                    </p>
+                    </span>
                   ]}
 
                 </div>
                 <span id="typed"></span>
               </div>
             </div>
-          </div>
           <div className="about-right">
           <TerminalImage terminalName={"Resume"} terminalImage={ResumeLogo} terminalImageHeight={60} terminalImageWidth={60} terminalLink={"/"}/>
           <TerminalImage terminalName={"LinkedIn"} terminalImage={LinkedInLogo} terminalImageHeight={50} terminalImageWidth={50} terminalLink={"https://www.linkedin.com/in/iporollo/"}/>

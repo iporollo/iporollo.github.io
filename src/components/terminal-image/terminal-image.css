@@ -79,3 +79,10 @@
   width: 400px;
   height: 250px;
 }
+
+@media screen and (max-width: 764px) {
+  .project-row .terminal-portfolio {
+    width: 300px;
+    height: 200px;
+  }
+}

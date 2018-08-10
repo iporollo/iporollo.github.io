@@ -38,3 +38,27 @@
     outline: none;
 }
 
+.dropdown-toggle-container {
+    display: none;
+}
+
+#dropdown-toggle-icon {
+    color: #000;
+    font-size: 18px;
+}
+
+#dropdown-toggle-icon:hover {
+    color: #0096cc;
+}
+
+@media screen and (max-width: 764px) {
+    .right {
+        display: none;
+    }
+    .dropdown-toggle-container {
+        display: block;
+    }
+    .navbar a:hover {
+        text-decoration: none;
+    }
+}

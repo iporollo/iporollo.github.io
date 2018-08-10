@@ -4,10 +4,13 @@ import Typist from "react-typist";
 import { NavbarTabsEnum } from "../../util/NavbarTabsEnum";
 import ReactModal from "react-modal";
 import ModalCloseIcon from "../icons/modal-close-icon";
+import Dropdown, { MenuItem } from '@trendmicro/react-dropdown';
 
 import * as FREELANCE_LOGO from "../../images/FreelanceLogo.png";
 
 import './navbar.css';
+import '@trendmicro/react-buttons/dist/react-buttons.css';
+import '@trendmicro/react-dropdown/dist/react-dropdown.css';
 
 interface NavbarProps {
     selectedTab: NavbarTabsEnum;
@@ -98,6 +101,28 @@ class Navbar extends React.Component<NavbarProps, NavbarStates> {
                 </Link>
                 <a href="javascript:void(0)" onClick={this.handleFreelanceClick} className="freelance-link">Freelance</a>
             </div>
+            <div className="dropdown-toggle-container">
+                <Dropdown pullRight onSelect={(eventKey: any) => {}}>
+                    <Dropdown.Toggle iconOnly noCaret btnStyle="link" >
+                    <i className="fa fa-bars" id="dropdown-toggle-icon"/>
+                        
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <MenuItem active={this.props.selectedTab === NavbarTabsEnum.About ? true : false} onSelect={(eventKey: any) => {window.location.replace("/")}}>
+                            About
+                        </MenuItem>
+                        <MenuItem active={this.props.selectedTab === NavbarTabsEnum.Experience ? true : false} onSelect={(eventKey: any) => {window.location.replace("/experience")}}>
+                            Experience
+                        </MenuItem>
+                        <MenuItem active={this.props.selectedTab === NavbarTabsEnum.Portfolio ? true : false} onSelect={(eventKey: any) => {window.location.replace("/portfolio")}}>
+                            Portfolio
+                        </MenuItem>
+                        <MenuItem onSelect={this.handleFreelanceClick}>
+                            Freelance
+                        </MenuItem>
+                    </Dropdown.Menu>
+                </Dropdown>
+            </div>
         </header>
 
         <ReactModal isOpen={this.state.isFreelanceModalOpen}
@@ -119,7 +144,11 @@ class Navbar extends React.Component<NavbarProps, NavbarStates> {
                         </div>
                         <div className="modal_body">
                             <div className="modal_body_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dolor non quam elementum semper ut et tortor.</p>
+                                <p>I'm a web application developer with 3+ years of experience. I have worked with multiple companies and projects to create quality websites.</p>
+                                <p>I can help with projects revolving around the creation of websites using React.js and many other front-end technologies (HTML, CSS, JQuery, Ajax).</p>
+                                <p>I have also interfaced with and developed many RESTful APIs, using technologies such as Ruby on Rails, C#, and Python. </p>
+                                <p>If you’re interested in contacting me about a project, please email me at:</p>
+                                <p>iporollo(at)gmail(dot)com</p>
                             </div>
                         </div>
 

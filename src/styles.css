@@ -107,7 +107,7 @@ html, body{
   }
 
   .modal_body_description {
-    max-width: 350px;
+    max-width: 600px;
     text-align: center;
     line-height: 30px;
   }

@@ -19,6 +19,12 @@
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true
   },
+  "include": [
+    "src/**/*",
+    "images/*",
+    "util/*",
+    "custom.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "build",

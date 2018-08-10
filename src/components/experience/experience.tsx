@@ -109,7 +109,7 @@ class Experience extends React.Component<any, ExperienceStates> {
                     <h3 className="vertical-timeline-element-title">Freelance Web Developer</h3>
                     <h4 className="vertical-timeline-element-subtitle subtitle"></h4>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Working on projects surrounding front-end and back-end web development
                     </p>
                     <br/>
                     <div className="vertical-timeline-element-details">
@@ -135,7 +135,7 @@ class Experience extends React.Component<any, ExperienceStates> {
                     <h3 className="vertical-timeline-element-title">Web Developer Intern</h3>
                     <h4 className="vertical-timeline-element-subtitle subtitle">Wiretap</h4>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Built multiple production ready web applications
                     </p>
                     <br/>
                     <div className="vertical-timeline-element-details">
@@ -161,7 +161,7 @@ class Experience extends React.Component<any, ExperienceStates> {
                     <h3 className="vertical-timeline-element-title">Software Engineering Intern</h3>
                     <h4 className="vertical-timeline-element-subtitle subtitle">Bank of America</h4>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Built a script to check the setup and status of virtual datacenters
                     </p>
                     <br/>
                     <div className="vertical-timeline-element-details">
@@ -190,7 +190,7 @@ class Experience extends React.Component<any, ExperienceStates> {
                     <h3 className="vertical-timeline-element-title">Web Developer Intern</h3>
                     <h4 className="vertical-timeline-element-subtitle subtitle">Cincinnati Children's Hospital</h4>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Built front-end web components for a research department's website
                     </p>
                     <br/>
                     <div className="vertical-timeline-element-details">
@@ -238,7 +238,7 @@ class Experience extends React.Component<any, ExperienceStates> {
                         </div>
                         <div className="modal_body">
                             <div className="modal_body_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dolor non quam elementum semper ut et tortor.</p>
+                                <p>Currently working as a part time freelance web developer while taking a full course load as a senior at OSU.  Providing services for clients surrounding the building of web applications using front-end and back-end technologies. Please check out the <span style={{textDecoration: "underline"}}>Freelance</span> tab if you are interested in contacting me for a project. </p>
                             </div>
                         </div>
 
@@ -265,7 +265,7 @@ class Experience extends React.Component<any, ExperienceStates> {
                         </div>
                         <div className="modal_body">
                             <div className="modal_body_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dolor non quam elementum semper ut et tortor.</p>
+                                <p>Early in the fall semester of my junior year at OSU, I was able to secure a part time position with a rapidly growing Columbus startup. I worked at Wiretap 20 hours a week while taking a full 18-hour course load, until the end of my spring semester. During my time with the company, I learned the ReactJS framework, and built multiple production ready web applications with it. My first project consisted of updating a website they had in production, written in Javascript and JQuery, by porting it over into React. The React version is currently live at <a href="https://feedfall.com/">feedfall.com</a>. The second project I worked on consisted of building a website in React from the ground up for the company’s move to a SaaS platform. While working on the projects, I participated in a team with an agile development environment – working in sprints with biweekly reviews.</p>
                             </div>
                         </div>
 
@@ -292,7 +292,7 @@ class Experience extends React.Component<any, ExperienceStates> {
                         </div>
                         <div className="modal_body">
                             <div className="modal_body_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dolor non quam elementum semper ut et tortor.</p>
+                                <p>As a 2017 summer intern, I worked on the network and architecture team. The bank had recently aquired a software defined networking tool called Nuage, and paired it with vSphere to move towards virtualization of datacenters. I was tasked with writing a python script that pulled data from the Nuage/vSphere environments and check whether it was setup correctly. Apart from the python CLI script, I also wrote a Flask web application that formatted the data and comparison in a readable fashion. The automation tool, Ansible, was also used to develop some parts of the project. </p>
                             </div>
                         </div>
 
@@ -319,8 +319,8 @@ class Experience extends React.Component<any, ExperienceStates> {
                         </div>
                         <div className="modal_body">
                             <div className="modal_body_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dolor non quam elementum semper ut et tortor.</p>
-                            </div>
+                                <p>In the Summer of 2016 I completed the CCHMC SURF program that paired students with research labs within the hospital. I was placed in the allergy department and tasked with updating the front end of a website they were actively rolling out using Angular2-Meteor. The website is used for the analysis of next-generation sequencing data and the storage of results for 200-300 monthly experiments.</p>
+                           </div>
                         </div>
 
                     </div>
@@ -345,11 +345,22 @@ class Experience extends React.Component<any, ExperienceStates> {
                             </div>
                         </div>
                         <div className="modal_body">
-                            <div className="modal_body_description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dolor non quam elementum semper ut et tortor.</p>
+                            <div className="modal_body_description" style={{textAlign: "left"}}>
+                                <p>Expecting to graduate May 2019 with a double major in Computer Science & Engineering and Russian Language.</p>
+                                <p>Current GPA: 3.38</p>
+                                <p>Relevant Coursework:</p>
+                                <ul>
+                                    <li>Software 1,2 – CSE 2221, 2231</li>
+                                    <li>Foundations 1,2 – CSE 2321, 2331</li>
+                                    <li>Systems 1,2 – CSE 2421, 2431</li>
+                                    <li>Introduction to AI 1 – CSE 3521</li>
+                                    <li>Web Application Development – CSE 3901</li>
+                                    <li>Automata & Formal Languages – CSE 3321</li>
+                                    <li>Foundations of Higher Math – MATH 3345</li>
+                                    <li>Statistics – STAT 3470</li>
+                                </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
         </ReactModal>

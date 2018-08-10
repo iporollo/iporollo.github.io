@@ -3,11 +3,12 @@ import './terminal-image.css';
 
 interface TerminalImageProps {
     terminalName: string;
-    terminalImage: any;
-    terminalImageHeight: number;
-    terminalImageWidth: number;
     terminalLink: string;
     portfolio?: boolean;
+    svg?: any;
+    terminalImage?: any;
+    terminalImageHeight?: number;
+    terminalImageWidth?: number;
 }
 
 class TerminalImage extends React.Component<TerminalImageProps, any> {
@@ -38,7 +39,11 @@ class TerminalImage extends React.Component<TerminalImageProps, any> {
             <div></div>
             </header>
             <div className="terminal-image-container">
-                <img src={this.props.terminalImage} height={this.props.terminalImageHeight} width={this.props.terminalImageWidth}/>
+                {this.props.svg ? 
+                    this.props.svg
+                :
+                    <img src={this.props.terminalImage} height={this.props.terminalImageHeight} width={this.props.terminalImageWidth}/>
+                }
             </div>
         </div>
     );
