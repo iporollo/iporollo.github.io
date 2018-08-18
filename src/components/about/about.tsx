@@ -96,7 +96,7 @@ class About extends React.Component<any, AboutStates> {
               </div>
             </div>
           <div className="about-right">
-          <TerminalImage terminalName={"Resume"} terminalImage={ResumeLogo} terminalImageHeight={60} terminalImageWidth={60} terminalLink={"/"}/>
+          <TerminalImage terminalName={"Resume"} terminalImage={ResumeLogo} terminalImageHeight={60} terminalImageWidth={60} terminalLink={"https://drive.google.com/file/d/1GAoChdYmpFGA-7u5OwNbwPOrlqK5dOCu/view?usp=sharing"}/>
           <TerminalImage terminalName={"LinkedIn"} terminalImage={LinkedInLogo} terminalImageHeight={50} terminalImageWidth={50} terminalLink={"https://www.linkedin.com/in/iporollo/"}/>
           <TerminalImage terminalName={"Github"} terminalImage={GithubLogo} terminalImageHeight={60} terminalImageWidth={60} terminalLink={"https://github.com/iporollo"}/>
           </div> 
