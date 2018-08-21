@@ -1,10 +1,19 @@
 import * as React from "react";
 // import ReactDOM from 'react-dom';
-import { render } from 'react-snapshot';
+import { hydrate, render } from "react-dom";
 import App from "./components/App/App";
 import "./styles.css";
 
-render(
-  <App />,
-  document.getElementById('root') as HTMLElement
-);
+const rootElement = document.getElementById('root') as HTMLElement;
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root') as HTMLElement
+// );
+
+

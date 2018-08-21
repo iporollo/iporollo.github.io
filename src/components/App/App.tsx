@@ -13,8 +13,7 @@ class App extends React.Component {
   public render() {
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Wrapper>
-
+        <React.Fragment>
           <Route exact path ="/" render={(routeProps) => (          
             <About></About>
           )}/>
@@ -25,7 +24,7 @@ class App extends React.Component {
           <Route exact path ="/portfolio" render={(routeProps) => (
             <Portfolio></Portfolio>
           )}/>
-        </Wrapper>
+        </React.Fragment>
       </BrowserRouter>
     );
   }
