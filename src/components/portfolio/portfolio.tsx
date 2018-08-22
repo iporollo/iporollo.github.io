@@ -16,8 +16,8 @@ class Portfolio extends React.Component {
     return (
         <PageContainer>
             <div className="portfolio">
-                <PortfolioProject reactDash terminalImage={ReactDashboard} terminalImageHeight={212} terminalImageWidth={400} terminalName={"React Dashboard"} terminalLink={"/"} projectText={REACT_DASHBOARD_TEXT}/>
-                <PortfolioProject terminalImage={WKNDRLogo} terminalImageHeight={80} terminalImageWidth={250} terminalName={"WKNDR"} terminalLink={"https://wkndr-app.herokuapp.com/#/"} projectText={WKNDR_TEXT}/>
+                <PortfolioProject reactDash terminalImage={ReactDashboard} terminalImageHeight={212} terminalImageWidth={400} terminalName={"React Dashboard"} terminalLink={"https://react-dashboard-interactive.herokuapp.com/"} projectText={REACT_DASHBOARD_TEXT}/>
+                <PortfolioProject terminalImage={WKNDRLogo} terminalImageHeight={80} terminalImageWidth={250} terminalName={"WKNDR"} terminalLink={"https://wkndr-app.herokuapp.com/"} projectText={WKNDR_TEXT}/>
                 <PortfolioProject svg={<FeedfallLogoIcon width={"300px"} height={"100px"}/>} terminalName={"Feedfall"} terminalLink={"https://feedfall.com/"} projectText={FEEDFALL_TEXT}/>
                 <div className="other-projects">
                 </div>
