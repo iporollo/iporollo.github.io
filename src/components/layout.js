@@ -7,27 +7,29 @@ const Layout = ({ location, title, children }) => {
   let header
 
   if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
+    header = <h2>Ivan's Blog</h2>
   }
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <header className="global-header">
+        <div>
+          <Link to="/">Blog</Link>
+          <span className="divider">|</span>
+          <Link to="/about">About Me</Link>
+          <span className="divider">|</span>
+          <a href="https://twitter.com/iporollo">Twitter</a>
+          <span className="divider">|</span>
+          <a href="https://linkedin.com/in/iporollo">LinkedIn</a>
+          <span className="divider">|</span>
+          <a href="https://github.com/iporollo">Github</a>
+        </div>
+        {header}
+      </header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        Follow me <a href="https://twitter.com/iporollo">@iporollo</a> on all
+        the socials
       </footer>
     </div>
   )
