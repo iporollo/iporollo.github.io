@@ -39,7 +39,7 @@ const AboutMe = ({ data, location }) => {
           🌉
         </p>
         <p>
-          I'm currently building <a href="https://monosi.dev">Monosi</a>.
+          I'm currently building <a href="https://cerebralvalley.ai">Cerebral Valley</a>.
         </p>
       </div>
     </Layout>
